@@ -1,27 +1,35 @@
-"2019-01-20 00:22:37 [main] INFO  com.culqui.CulquiTestApplication - Starting CulquiTestApplication on TOSHIVA-R with PID 14452 (C:\Users\USUARIO\Downloads\TestCulqui-master\TestCulqui-master\target\classes started by RUSVEL in C:\Users\USUARIO\Downloads\TestCulqui-master\TestCulqui-master)
-""2019-01-20 00:22:37 [main] INFO  com.culqui.CulquiTestApplication - No active profile set, falling back to default profiles: default
-""2019-01-20 00:22:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
-""2019-01-20 00:22:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-01-20 00:22:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
-""2019-01-20 00:22:40 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_31/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_31/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_31/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_31\bin;E:\RUSS\CIBERTEC\02_Programas\apache-ant-1.8.2\bin;E:\app\RUSVEL_2\product\12.2.0\dbhome_1\bin;C:\oraclexe10\app\oracle\product\10.2.0\server\bin;E:\app\RUSVEL\product\11.2.0\dbhome_1\bin;C:\app\RUSVEL\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\bin;E:\tools\apache-maven-3.5.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\tools\apache-maven-3.5.0\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\USUARIO\AppData\Local\Microsoft\WindowsApps;;C:\Users\USUARIO\Downloads\spring-tool-suite-3.8.3.RELEASE-e4.6.2-win32-x86_64\sts-bundle\sts-3.8.3.RELEASE;;.]
-""2019-01-20 00:22:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-""2019-01-20 00:22:40 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3227 ms
-""2019-01-20 00:22:41 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-01-20 00:22:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-""2019-01-20 00:22:41 [main] INFO  com.culqui.CulquiTestApplication - Started CulquiTestApplication in 5.729 seconds (JVM running for 6.847)
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - Método: generarTokenTarjeta
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Método: callBinlistService
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - URL: https://lookup.binlist.net/{bin}
-""2019-01-20 00:22:52 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Parametro bin: 444433
-""2019-01-20 00:22:54 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Json Respuesta Servicio: 
-""2019-01-20 00:22:54 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - {
+"2019-01-29 12:12:41 [main] INFO  c.culqui.CulquiTestApplicationTests - Starting CulquiTestApplicationTests on laptop-lvercellih with PID 2830 (started by lvercelli in /home/lvercelli/dev/tests/2-rusvel)
+""2019-01-29 12:12:41 [main] INFO  c.culqui.CulquiTestApplicationTests - No active profile set, falling back to default profiles: default
+""2019-01-29 12:12:43 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-01-29 12:12:43 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+""2019-01-29 12:12:43 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+""2019-01-29 12:12:43 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 31 ms
+""2019-01-29 12:12:44 [main] INFO  c.culqui.CulquiTestApplicationTests - Started CulquiTestApplicationTests in 3.322 seconds (JVM running for 4.755)
+""2019-01-29 12:12:44 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-01-29 12:16:10 [main] INFO  com.culqui.CulquiTestApplication - Starting CulquiTestApplication on laptop-lvercellih with PID 6055 (/home/lvercelli/dev/tests/2-rusvel/target/classes started by lvercelli in /home/lvercelli/dev/tests/2-rusvel)
+""2019-01-29 12:16:10 [main] INFO  com.culqui.CulquiTestApplication - No active profile set, falling back to default profiles: default
+""2019-01-29 12:16:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+""2019-01-29 12:16:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-01-29 12:16:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.14]
+""2019-01-29 12:16:12 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+""2019-01-29 12:16:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2019-01-29 12:16:13 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2248 ms
+""2019-01-29 12:16:13 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-01-29 12:16:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+""2019-01-29 12:16:14 [main] INFO  com.culqui.CulquiTestApplication - Started CulquiTestApplication in 4.253 seconds (JVM running for 9.082)
+""2019-01-29 12:21:32 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-01-29 12:21:32 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2019-01-29 12:21:32 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - Método: generarTokenTarjeta
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Método: callBinlistService
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - URL: https://lookup.binlist.net/{bin}
+""2019-01-29 12:40:53 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Parametro bin: 444433
+""2019-01-29 12:40:55 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - Json Respuesta Servicio: 
+""2019-01-29 12:40:55 [http-nio-8085-exec-1] INFO  com.culqui.client.RestCardClient - {
   "number" : {
     "length" : 0,
     "luhn" : false
@@ -46,92 +54,11 @@
     "city" : null
   }
 }
-""2019-01-20 00:22:54 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - Json Respuesta Generado: 
-""2019-01-20 00:22:54 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - {
+""2019-01-29 12:40:55 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - Json Respuesta Generado: 
+""2019-01-29 12:40:55 [http-nio-8085-exec-1] INFO  com.culqui.service.BasicCardService - {
   "token" : "tkn_live_4444333322221111-2020-10",
   "brand" : "visa",
-  "creation_dt" : "2019-01-20 12:22:54"
+  "creation_dt" : "2019-01-29 12:40:55"
 }
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.service.BasicCardService - Método: generarTokenTarjeta
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - Método: callBinlistService
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - URL: https://lookup.binlist.net/{bin}
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - Parametro bin: 444433
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - Json Respuesta Servicio: 
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.client.RestCardClient - {
-  "number" : {
-    "length" : 0,
-    "luhn" : false
-  },
-  "scheme" : "visa",
-  "type" : null,
-  "brand" : null,
-  "prepaid" : null,
-  "country" : {
-    "numeric" : "840",
-    "alpha2" : "US",
-    "name" : "United States of America",
-    "emoji" : "🇺🇸",
-    "currency" : "USD",
-    "latitude" : 38,
-    "longitude" : -97
-  },
-  "bank" : {
-    "name" : null,
-    "url" : null,
-    "phone" : null,
-    "city" : null
-  }
-}
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.service.BasicCardService - Json Respuesta Generado: 
-""2019-01-20 00:22:55 [http-nio-8085-exec-2] INFO  com.culqui.service.BasicCardService - {
-  "token" : "tkn_live_4444333322221111-2020-10",
-  "brand" : "visa",
-  "creation_dt" : "2019-01-20 12:22:55"
-}
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.service.BasicCardService - Método: generarTokenTarjeta
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.service.BasicCardService - ---------------------------------------------
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - Método: callBinlistService
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - ---------------------------------------------
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - URL: https://lookup.binlist.net/{bin}
-""2019-01-20 00:22:56 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - Parametro bin: 444433
-""2019-01-20 00:22:57 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - Json Respuesta Servicio: 
-""2019-01-20 00:22:57 [http-nio-8085-exec-3] INFO  com.culqui.client.RestCardClient - {
-  "number" : {
-    "length" : 0,
-    "luhn" : false
-  },
-  "scheme" : "visa",
-  "type" : null,
-  "brand" : null,
-  "prepaid" : null,
-  "country" : {
-    "numeric" : "840",
-    "alpha2" : "US",
-    "name" : "United States of America",
-    "emoji" : "🇺🇸",
-    "currency" : "USD",
-    "latitude" : 38,
-    "longitude" : -97
-  },
-  "bank" : {
-    "name" : null,
-    "url" : null,
-    "phone" : null,
-    "city" : null
-  }
-}
-""2019-01-20 00:22:57 [http-nio-8085-exec-3] INFO  com.culqui.service.BasicCardService - Json Respuesta Generado: 
-""2019-01-20 00:22:57 [http-nio-8085-exec-3] INFO  com.culqui.service.BasicCardService - {
-  "token" : "tkn_live_4444333322221111-2020-10",
-  "brand" : "visa",
-  "creation_dt" : "2019-01-20 12:22:57"
-}
-""2019-01-20 00:23:02 [RMI TCP Connection(2)-192.168.0.18] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-""2019-01-20 00:23:02 [RMI TCP Connection(2)-192.168.0.18] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-01-29 12:45:27 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 "

@@ -2,9 +2,13 @@ package com.culqui.service;
 
 import java.util.Date;
 
+import com.culqui.client.RestAutorizacionClient;
+import com.culqui.entity.Autorizacion;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.culqui.client.RestCardClient;
@@ -21,6 +25,9 @@ public class BasicCardService implements CardService{
 	
 	@Autowired
 	RestCardClient restCardClient;
+
+	@Autowired
+	RestAutorizacionClient restAutorizacionClient;
 	
 	@Autowired
 	UtilCulqui util;
@@ -33,7 +40,9 @@ public class BasicCardService implements CardService{
 	Date fechaHora;
 	private String FORMATO_FECHA;
 	
-	public CardToken generarTokenTarjeta(Card card) {
+
+	@Override
+	public CardToken generarTokenTarjeta(Card card, HttpHeaders headers) {
 		FORMATO_FECHA = propertiesCulquiTest.fechaFormatoCulquiTest;
 		String codBin = "";
 		String tkn_live = "";
@@ -43,19 +52,32 @@ public class BasicCardService implements CardService{
 		log.info("---------------------------------------------");
 		log.info("Método: generarTokenTarjeta");
 		log.info("---------------------------------------------");
+
+		headers.set("clave", "abcdefg");
+
 		codBin = card.getPan().substring(0, 6);
-		cardBinlist = restCardClient.callBinlistService(codBin);
-		
-		tkn_live = "tkn_live_"+card.getPan()+"-"+card.getExp_year()+"-"+card.getExp_month();
-		brand = cardBinlist.getScheme();
-		dateString = util.formatoFechaString(new Date(), FORMATO_FECHA);
-		
-		cardToken = new CardToken(tkn_live, brand, dateString);
-		
-		log.info("Json Respuesta Generado: ");
-		log.info(util.objectToJson(cardToken));
-		
+
+		log.info("Invoca al servicio de autorización: ");
+		Autorizacion autorizacion = restAutorizacionClient.callBinlistService(codBin);
+
+		if(autorizacion.getValor()){
+			log.info("Paso la autorización: ");
+			cardBinlist = restCardClient.callBinlistService(codBin);
+
+			tkn_live = "tkn_live_"+card.getPan()+"-"+card.getExp_year()+"-"+card.getExp_month();
+			brand = cardBinlist.getScheme();
+			dateString = util.formatoFechaString(new Date(), FORMATO_FECHA);
+
+			cardToken = new CardToken(tkn_live, brand, dateString);
+
+			log.info("Json Respuesta Generado: ");
+			log.info(util.objectToJson(cardToken));
+		}else{
+			log.info("No paso el servicio de autorización ");
+
+		}
+
+
 		return cardToken;
 	}
-
 }

@@ -11,6 +11,9 @@ public class PropertiesCulquiTest {
 	@Value( "${url.binlist}" )
 	public String urlBinlist;
 
+	@Value( "${url.valida}" )
+	public String valida;
+
 	@Value( "${fecha.formato.culqui.test}" )
 	public String fechaFormatoCulquiTest;
 }
